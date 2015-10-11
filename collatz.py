@@ -28,3 +28,5 @@ def enterNum():
 
 number = enterNum()
 collatz(number)
+print('And we are done!')
+
