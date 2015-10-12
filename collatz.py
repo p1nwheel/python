@@ -1,8 +1,6 @@
 def collatz(numberIn):
     number = numberIn
-    while True:
-        if number == 1:
-            break
+    while not number == 1:
         if number % 2 == 0:     # True if input is Even
             number = number // 2
             print(str(number))
