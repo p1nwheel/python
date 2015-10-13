@@ -12,16 +12,12 @@ def collatz(numberIn):
         print('Collatz requires integer value to execute')
 
 def enterNum():
-    #while True:
     for attemptsTaken in range(1, 4):
         try:
             fail = 0
             print('Enter Number:')
             number = int(input())
-        except ValueError:
-            print('Enter whole number only!')
-            fail = 1
-        except NameError:
+        except:
             print('Enter whole number only!')
             fail = 1
         if fail == 0:
