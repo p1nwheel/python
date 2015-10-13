@@ -11,8 +11,8 @@ def collatz(numberIn):
     else:
         print('Collatz requires integer value to execute')
 
-def enterNum():
-    for attemptsTaken in range(1, 4):
+def enterNum(maxTries):
+    for attemptsTaken in range(1, (maxTries) + 1):
         try:
             fail = 0
             print('Enter Number:')
@@ -23,9 +23,9 @@ def enterNum():
         if fail == 0:
             return(number)
             break
-    print('No number entered after 3 attempts')
+    print('No number entered after ' + str(maxTries) + ' attempts')
 
-number = enterNum()
+number = enterNum(3)
 collatz(number)
 print('And we are done!')
 
