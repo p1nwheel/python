@@ -1,3 +1,7 @@
+print('Enter Name')
+name = input()
+print('Enter Age')
+age = int(input())
 if name == 'Alice':
     print('Hi, Alice.')
 elif age < 12:
