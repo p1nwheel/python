@@ -1,6 +1,6 @@
 print('Enter Name')
 name = input()
-print('Enter Age')
+print('Enter Your Age')
 age = int(input())
 if name == 'Alice':
     print('Hi, Alice.')
